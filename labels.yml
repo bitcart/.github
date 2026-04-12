@@ -1,0 +1,158 @@
+# Bitcart GitHub Label Taxonomy
+# Generated from BEP-0003: https://git.bitcart.ai/bitcart/beps/src/branch/master/beps/BEP-0003-github-label-taxonomy.md
+# Synced across all org repos via EndBug/label-sync
+
+# Priority
+- name: "priority: critical"
+  color: "b60205"
+  description: "Production outage, security vulnerability, data loss"
+
+- name: "priority: high"
+  color: "d93f0b"
+  description: "Blocks a release or major workflow"
+
+- name: "priority: medium"
+  color: "e99695"
+  description: "Should be addressed this cycle"
+
+- name: "priority: low"
+  color: "f9d0c4"
+  description: "Nice to have, no urgency"
+
+- name: "priority: backlog"
+  color: "f5f5f5"
+  description: "Acknowledged but not scheduled"
+
+# Type
+- name: "type: bug"
+  color: "d73a4a"
+  description: "Something isn't working"
+
+- name: "type: feature"
+  color: "1d76db"
+  description: "New capability"
+
+- name: "type: enhancement"
+  color: "0075ca"
+  description: "Improvement to existing functionality"
+
+- name: "type: docs"
+  color: "0052cc"
+  description: "Documentation only"
+
+- name: "type: chore"
+  color: "c5def5"
+  description: "Maintenance, CI, deps, refactoring"
+
+- name: "type: security"
+  color: "b60205"
+  description: "Security issue"
+
+- name: "type: plugin"
+  color: "5319e7"
+  description: "Plugin development work"
+
+- name: "type: question"
+  color: "d4c5f9"
+  description: "Discussion, not yet actionable"
+
+# Component
+- name: "component: backend/api"
+  color: "7057ff"
+  description: "Bitcart Merchants API"
+
+- name: "component: backend/daemons"
+  color: "7057ff"
+  description: "Bitcart Daemons"
+
+- name: "component: frontend/admin"
+  color: "e875a0"
+  description: "Bitcart Admin Panel"
+
+- name: "component: frontend/store"
+  color: "e875a0"
+  description: "Bitcart Store"
+
+- name: "component: frontend/checkout"
+  color: "e875a0"
+  description: "Bitcart Checkout"
+
+- name: "component: frontend/landing"
+  color: "e875a0"
+  description: "Bitcart Landing"
+
+- name: "component: frontend/directory"
+  color: "e875a0"
+  description: "Bitcart Directory"
+
+- name: "component: docker"
+  color: "d7a8e3"
+  description: "Bitcart Docker"
+
+- name: "component: sdk"
+  color: "e1bee7"
+  description: "Bitcart SDKs"
+
+- name: "component: docs"
+  color: "ebd4f0"
+  description: "Bitcart Documentation"
+
+# Coin
+# Full list: https://api.bitcart.ai/cryptos/supported
+- name: "coin: btc"
+  color: "fbca04"
+  description: "Bitcoin"
+
+- name: "coin: bch"
+  color: "fbca04"
+  description: "Bitcoin Cash"
+
+- name: "coin: xmr"
+  color: "fbca04"
+  description: "Monero"
+
+- name: "coin: eth"
+  color: "fbca04"
+  description: "Ethereum"
+
+- name: "coin: bnb"
+  color: "fbca04"
+  description: "Binance Smart Chain"
+
+- name: "coin: ltc"
+  color: "fbca04"
+  description: "Litecoin"
+
+- name: "coin: matic"
+  color: "fbca04"
+  description: "Polygon"
+
+- name: "coin: trx"
+  color: "fbca04"
+  description: "Tron"
+
+- name: "coin: xrg"
+  color: "fbca04"
+  description: "Ergon"
+
+- name: "coin: grs"
+  color: "fbca04"
+  description: "Groestlcoin"
+
+# Status
+- name: "status: blocked"
+  color: "999999"
+  description: "Waiting on an external dependency"
+
+# Special
+- name: "good-first-issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+
+- name: "help-wanted"
+  color: "008672"
+  description: "Extra attention is needed"
+
+- name: "duplicate"
+  color: "cfd3d7"
+  description: "This issue or pull request already exists"
