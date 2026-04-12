@@ -145,11 +145,11 @@
   description: "Waiting on an external dependency"
 
 # Special
-- name: "good-first-issue"
+- name: "good first issue"
   color: "7057ff"
   description: "Good for newcomers"
 
-- name: "help-wanted"
+- name: "help wanted"
   color: "008672"
   description: "Extra attention is needed"
 
@@ -157,9 +157,17 @@
   color: "cfd3d7"
   description: "This issue or pull request already exists"
 
+- name: "invalid"
+  color: "e4e669"
+  description: "Not a bug, can't reproduce, or user error"
+
 - name: "epic"
   color: "0d7377"
   description: "Groups related issues into a larger initiative"
+
+- name: "release-blocker"
+  color: "b60205"
+  description: "Blocks the upcoming release"
 
 - name: "issues-diagram"
   color: "999999"
