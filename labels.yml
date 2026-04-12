@@ -156,3 +156,11 @@
 - name: "duplicate"
   color: "cfd3d7"
   description: "This issue or pull request already exists"
+
+- name: "epic"
+  color: "0d7377"
+  description: "Groups related issues into a larger initiative"
+
+- name: "issues-diagram"
+  color: "999999"
+  description: "CI-automated priority tree and dependency graph"
