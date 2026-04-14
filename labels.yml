@@ -170,5 +170,5 @@
   description: "Blocks the upcoming release"
 
 - name: "issues-diagram"
-  color: "999999"
+  color: "bfd4f2"
   description: "CI-automated priority tree and dependency graph"
