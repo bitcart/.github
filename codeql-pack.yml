@@ -1,0 +1,7 @@
+name: bitcart/codeql-extensions
+version: 0.1.0
+library: true
+extensionTargets:
+  codeql/actions-all: "*"
+dataExtensions:
+  - models/**/*.yml

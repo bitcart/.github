@@ -1,0 +1,41 @@
+name: Publish CodeQL model pack
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "codeql-pack.yml"
+      - "models/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Install CodeQL CLI
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download \
+            --repo github/codeql-cli-binaries \
+            --pattern 'codeql-linux64.zip' \
+            --output codeql.zip
+          unzip -q codeql.zip
+          echo "$PWD/codeql" >> "$GITHUB_PATH"
+
+      - name: Install pack dependencies
+        run: codeql pack install
+
+      - name: Publish pack to GHCR
+        env:
+          CODEQL_REGISTRIES_AUTH: ghcr.io=${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+        run: codeql pack publish
