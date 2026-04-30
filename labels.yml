@@ -153,6 +153,10 @@
   color: "008672"
   description: "Extra attention is needed"
 
+- name: "needs-triage"
+  color: "ededed"
+  description: "Awaiting maintainer review and labeling"
+
 - name: "duplicate"
   color: "cfd3d7"
   description: "This issue or pull request already exists"
