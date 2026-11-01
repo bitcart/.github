@@ -85,6 +85,10 @@
   color: "e875a0"
   description: "Bitcart Directory"
 
+- name: "component: frontend/blog"
+  color: "e875a0"
+  description: "Bitcart Blog"
+
 - name: "component: docker"
   color: "d7a8e3"
   description: "Bitcart Docker"
