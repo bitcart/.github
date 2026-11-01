@@ -11,11 +11,12 @@ on:
 
 permissions:
   contents: read
-  packages: write
+  packages: write # publishing to GHCR
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v6
         with:
