@@ -9,16 +9,24 @@ on:
       - "models/**"
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow_ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: read
-  packages: write # publishing to GHCR
 
 jobs:
   publish:
+    name: publish
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: write # publishing to GHCR
+
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
